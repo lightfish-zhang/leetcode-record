@@ -1,0 +1,7 @@
+.idea
+*.out
+*.tmp
+*.i
+*.o
+*.s
+.vscode
