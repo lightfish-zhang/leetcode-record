@@ -49,7 +49,7 @@ main()
         nums.push_back(data[i]);
     }
 
-    int result = s.threeSumClosest(nums, -5);
+    int result = s.threeSumClosest(nums, 1);
     cout << result << endl;
     return 0;
 }
