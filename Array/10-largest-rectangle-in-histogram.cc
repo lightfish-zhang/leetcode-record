@@ -48,6 +48,10 @@ public:
         index.push_back(i);
         i++;
       } else {
+        // 一旦遇到当前的柱的高度小于index栈顶的柱的高度，进行退栈与计算面积
+        // 计算面积，是计算index栈中，高度与坐标差的
+        // 越是低的柱，越是放到后面计算
+        // index是用来动态的保存坐标差，越小的柱，所需的坐标范围越大
         int t = index.back();
         index.pop_back();
         // 如果index 退栈之后为空了，也就证明刚退栈的坐标的柱是最小的，此时i也为height.size()，计算包含最小的柱的矩形面积
